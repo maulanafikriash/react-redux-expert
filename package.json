@@ -5,13 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 3002",
+    "preview": "vite preview",
     "test": "vitest --no-watch",
     "e2e": "cypress run",
-    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e"
+    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://localhost:3000 e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
