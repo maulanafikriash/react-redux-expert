@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.loading {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.bg-color{
+  background-color: #002b3a;
+  display: block;
+}
+
+.q-card {
+  margin-top: 100px;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-text {
+  padding-left: 8px;
+}
+
+.auth-l{
+  padding-left: 5px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  padding-top: 7px;
+}
+
+.img-thumbnail{
+  max-width:300px;
+  height: 400px;
+  margin-top: 50px;
+  
+}
+
+@media (max-width: 991px) {
+  .d-thr {
+    margin-top: 40px;
+  }
+}
