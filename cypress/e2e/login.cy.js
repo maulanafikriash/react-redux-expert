@@ -12,7 +12,7 @@
 
 describe('Login spec', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:5173/');
+    cy.visit('http://localhost:3000/');
     cy.get('header span').contains('Login').click();
   });
 
