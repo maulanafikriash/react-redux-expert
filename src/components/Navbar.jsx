@@ -20,7 +20,7 @@ export default function Navbar({ onLogoutHandler, authUserId }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
       <div className="container">
-        <h2 className="navbar-brand">DiskusiYuk...</h2>
+        <h2 className="navbar-brand">DiskusiYuk App</h2>
         <button
           className="navbar-toggler"
           type="button"
