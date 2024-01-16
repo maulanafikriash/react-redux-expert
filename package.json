@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest --no-watch",
     "e2e": "cypress run",
-    "ci:test": "sleep 10 && vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e",
+    "ci:test": "wait-for-it -t 200 http://0.0.0.0:5173 && vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e",
     "host":"vite --host"
   },
   "dependencies": {
