@@ -8,10 +8,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 3002",
+    "preview": "vite preview",
     "test": "vitest --no-watch",
     "e2e": "cypress run",
-    "ci:test": "vitest --no-watch && start-server-and-test dev -- --host http-get://192.168.1.5:5173 e2e",
+    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e",
     "host":"vite --host"
   },
   "dependencies": {
